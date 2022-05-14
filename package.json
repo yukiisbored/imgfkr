@@ -1,0 +1,10 @@
+{
+  "name": "imgfkr",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yuki Langley (yuki_is_bored) <hi@yukiisbo.red>",
+  "license": "Unlicense"
+}
