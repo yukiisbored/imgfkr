@@ -1,0 +1,12 @@
+image: node:14
+
+pages:
+  stage: deploy
+  before_script:
+    - npm install
+  script:
+    - npm run build
+    - mv dist public
+  artifacts:
+    paths:
+      - public
