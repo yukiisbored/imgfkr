@@ -2,9 +2,19 @@
   "name": "imgfkr",
   "version": "1.0.0",
   "description": "",
+  "source": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel",
+    "build": "parce build"
   },
   "author": "Yuki Langley (yuki_is_bored) <hi@yukiisbo.red>",
-  "license": "Unlicense"
+  "license": "Unlicense",
+  "devDependencies": {
+    "parcel": "^2.5.0",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "daisyui": "^2.14.3"
+  }
 }
