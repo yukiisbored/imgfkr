@@ -5,7 +5,7 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parce build"
+    "build": "parcel build"
   },
   "author": "Yuki Langley (yuki_is_bored) <hi@yukiisbo.red>",
   "license": "Unlicense",
