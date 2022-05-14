@@ -5,14 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>imgfkr</title>
-        <meta name="description" content="">
+        <meta name="description" content="the awful image editor">
 
         <link href="./index.css" rel="stylesheet">
-
     </head>
     <body>
-        <div class="container mx-auto p-4">
-            <h1 class="text-5xl">Hello, world!</h1>
+        <div class="container mx-auto p-4"
+             data-controller="app">
+            <div class="hero p-8 bg-base-200">
+                <div class="hero-content text-center">
+                    <div class="max-w-xl">
+                        <h1 class="text-5xl font-bold">imgfkr</h1>
+
+                        <p class="mt-6">JPEGs recommended</p>
+
+                        <input class="input input-bordered pt-2 mt-2"
+                               type="file" accept="image/*"
+                               data-app-target="input"
+                               data-action="app#upload">
+
+                        <p class="mt-2" data-app-target="error"></p>
+
+                        <p class="mt-2">To save your work, it's recommended to take a screenshot, sorry.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 py-6 min-h-screen">
+                <div>
+                    <textarea class="textarea textarea-bordered box-border resize-none min-h-full min-w-full"
+                              data-app-target="editor">
+                    </textarea>
+                </div>
+                <div>
+                    <img data-app-target="viewer">
+                </div>
+            </div>
         </div>
         <script type="module" src="index.js"></script>
     </body>
